@@ -1,0 +1,7 @@
+Fonts: 
+
+http://www.fontsquirrel.com/fonts/Colaborate
+
+http://www.fontsquirrel.com/fonts/Pincoyablack
+
+http://www.google.com/webfonts/specimen/PT+Sans

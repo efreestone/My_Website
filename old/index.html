@@ -1,0 +1,572 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Elijah Freestone</title>
+		<meta charset="utf-8">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.responsivemenu.js"></script>
+		<script src="js/jquery.scrollTo.js"></script>
+		<script src="js/jquery.nav.js"></script>
+		<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+		<script src="js/jquery.scrollTo-1.4.3.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/forms.js"></script>
+		<script src="js/touchTouch.jquery.js"></script>
+		<script src="js/jquery.tweet.js"></script>
+		<script src="js/script.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.flexslider').flexslider({
+					animation : "slide"
+				});
+				$('.port_col a').touchTouch();
+				$('.port_col a').append('<em></em><span></span>');
+			});
+			$(function() {
+				$('.sf-menu').onePageNav({
+					begin : function() {
+
+					},
+					end : function() {
+
+					},
+					scrollOffset : 30
+				});
+				$('.main-menu').prepend('<div id="menu-icon"></div>');
+				$("#menu-icon").on("click", function() {
+					$(".sf-menu").slideToggle();
+					$(this).toggleClass("active");
+				});
+			})
+		</script>
+		<!--[if lt IE 8]>
+		<div style=' clear: both; text-align:center; position: relative;'>
+		<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+		<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+		</a>
+		</div>
+		<![endif]-->
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="js/html5.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+		<![endif]-->
+	</head>
+	<body>
+		<!--==============================header=================================-->
+		<header>
+			<div class="inner">
+				<div class="main">
+					<h1><a class="logo" href="index.html">Elijah Freestone</a></h1>
+					<nav class="main-menu">
+						<ul class="sf-menu">
+							<li class="current">
+								<a href="#home">Home</a>
+							</li>
+							<!--
+<li>
+								<a href="#services">Services</a>
+							</li>
+-->
+							<li>
+								<a href="#portfolio">Portfolio</a>
+							</li>
+							
+							<li>
+								<a href="#blog">About</a>
+							</li>
+
+							<!--
+<li>
+								<a href="#our_team">Our Team</a>
+							</li>
+-->
+							<li>
+								<a href="#contacts">Contact</a>
+							</li>
+						</ul>
+						<div class="clear"></div>
+					</nav>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</header>
+		<!--==============================content================================-->
+		<section id="content">
+			<ul id="pages">
+				<!-- Home page -->
+				<li id="home" class="slide">
+					<div class="inner">
+						<div class="flexslider">
+							<ul class="slides">
+								<li>
+									<img src="images/slide1.png" alt="">
+									<div class="banner">
+										<div class="inner">
+											<div class="title">
+												<div class="title1">
+													<strong>ElijahFreestone.com</strong> is a 
+												</div>
+												<div class="title2">
+													work in progress. Please bare with me. I am a mobile dev, not web...
+												</div>
+												<!--
+<div class="title1">
+													Please bare with me. I am a mobile dev, not web...
+												</div>
+-->
+												<!-- <a href="#" class="button">Purchase now</a> -->
+											</div>
+										</div>
+									</div>
+								</li>
+								<!--
+<li>
+									<img src="images/slide1.png" alt="">
+									<div class="banner">
+										<div class="inner">
+											<div class="title">
+												<div class="title1">
+													<strong>Elijah Freestone</strong> is a one page
+												</div>
+												<div class="title2">
+													html5 <strong>theme</strong>
+												</div>
+												<a href="#" class="button">Purchase now</a>
+											</div>
+										</div>
+									</div>
+								</li>
+-->
+								<!--
+<li>
+									<img src="images/slide1.png" alt="">
+									<div class="banner">
+										<div class="inner">
+											<div class="title">
+												<div class="title1">
+													<strong>Elijah Freestone</strong> is a one page
+												</div>
+												<div class="title2">
+													html5 <strong>theme</strong>
+												</div>
+												<a href="#" class="button">Purchase now</a>
+											</div>
+										</div>
+									</div>
+								</li>
+-->
+							</ul>
+						</div>
+					</div>
+				</li>
+				<!-- home page end -->
+
+				<!-- Service page start -->
+				<!--
+<li id="services" class="slide bg1">
+					<div class="main slogan">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut <em class="font1">laoreet dolore magna</em> aliquam erat volutpat.
+					</div>
+					<ul class="offers">
+						<li class="var1">
+							<div class="main">
+								<div class="wrapper bord_r">
+									<div class="offer_col">
+										<a href="#"> <span class="top"><img src="images/offer1.png" alt=""></span> <span class="title">online support 24/7</span> <span class="description"> Lorem ipsum magna aliquam erat volutpat. dolor sit conse ctetuer adipiscing elit </span> </a>
+									</div>
+									<div class="offer_col extra">
+										<a href="#"> <span class="top"><img src="images/offer2.png" alt=""></span> <span class="title">concept &amp; Design</span> <span class="description"> Sed diam nonu magna aliquam
+											<br>
+											erat volutpat my nibh euismodt ut laoreet dolore </span> </a>
+									</div>
+									<div class="offer_col">
+										<a href="#"> <span class="top"><img src="images/offer3.png" alt=""></span> <span class="title">executing &amp; testing</span> <span class="description"> Magna aliquam erat volutpat onummy nibh euismod tinci dunt ut laoreet dolore </span> </a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="var2">
+							<div class="main">
+								<div class="wrapper bord_r">
+									<div class="offer_col">
+										<a href="#"> <span class="top"><img src="images/offer4.png" alt=""></span> <span class="title">online support 24/7</span> <span class="description"> Lorem ipsum magna aliquam erat volutpat. dolor sit conse ctetuer adipiscing elit </span> </a>
+									</div>
+									<div class="offer_col extra">
+										<a href="#"> <span class="top"><img src="images/offer5.png" alt=""></span> <span class="title">Easy customization</span> <span class="description"> Sed diam nonu magna aliquam
+											<br>
+											erat volutpat my nibh euismodt ut laoreet dolore </span> </a>
+									</div>
+									<div class="offer_col">
+										<a href="#"> <span class="top"><img src="images/offer6.png" alt=""></span> <span class="title">mobile ready</span> <span class="description"> Magna aliquam erat volutpat onummy nibh euismod tinci dunt ut laoreet dolore </span> </a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+-->
+				<!-- Service End -->
+				<!-- Portfolio page start -->
+				<li id="portfolio" class="slide bg2">
+					<div class="main">
+						<div class="port_box">
+							<div class="port_col">
+								<a href="images/portfolio1.jpg"> <img src="images/portfolio1.png" alt=""> </a>
+								<div>
+									Star Cat
+								</div>
+							</div>
+							<div class="port_col">
+								<a href="images/portfolio2.jpg"> <img src="images/portfolio2.png" alt=""> </a>
+								<div>
+									Silent Night
+								</div>
+							</div>
+							<div class="port_col">
+								<a href="images/portfolio3.jpg"> <img src="images/portfolio3.png" alt=""> </a>
+								<div>
+									BusinessMan t-shirt
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="port_box">
+							<div class="port_col">
+								<a href="images/portfolio4.jpg"> <img src="images/portfolio4.png" alt=""> </a>
+								<div>
+									Eat Me
+								</div>
+							</div>
+							<div class="port_col">
+								<a href="images/portfolio5.jpg"> <img src="images/portfolio5.png" alt=""> </a>
+								<div>
+									Happy Cartoons
+								</div>
+							</div>
+							<div class="port_col">
+								<a href="images/portfolio6.jpg"> <img src="images/portfolio6.png" alt=""> </a>
+								<div>
+									Mysterious World
+								</div>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+				<!-- Portfolio page end -->
+				<!--
+<li id="blog" class="slide bg1">
+					<div class="main">
+						<div class="col1">
+							<ul class="ext_list blog sans">
+								<li class="clearfix">
+									<figure>
+										<time datetime="2013-01-01">
+											<strong>22</strong>
+											nov
+										</time>
+										<a href="#"> <strong>12</strong> comments </a>
+									</figure>
+									<div>
+										<figure>
+											<a href="#"><img src="images/blog1.jpg" alt=""></a>
+										</figure>
+										<div class="text">
+											Lorem ipsum dolor sit amet, consec tetuer
+										</div>
+									</div>
+								</li>
+								<li class="clearfix last">
+									<figure>
+										<time datetime="2013-01-01">
+											<strong>26</strong>
+											dec
+										</time>
+										<a href="#"> <strong>24</strong> comments </a>
+									</figure>
+									<div>
+										<figure>
+											<a href="#"><img src="images/blog2.jpg" alt=""></a>
+										</figure>
+										<div class="text">
+											Lorem ipsum dolor sit amet, consec tetuer
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="blog_nav_box">
+								<ul class="blog_nav">
+									<li class="current">
+										<a href="#">1</a>
+									</li>
+									<li>
+										<a href="#">2</a>
+									</li>
+									<li>
+										<a href="#">3</a>
+									</li>
+									<li>
+										<a href="#">4</a>
+									</li>
+									<li>
+										<a href="#">5</a>
+									</li>
+									<li>
+										<a href="#">6</a>
+									</li>
+									<li>
+										<a href="#">7</a>
+									</li>
+								</ul>
+								<a href="#" class="blog_prev nav_btn"></a>
+								<a href="#" class="blog_next nav_btn"></a>
+								<div class="clear"></div>
+							</div>
+						</div>
+						<div class="col2">
+							<h4 class="ind">Recent Posts</h4>
+							<ul class="ext_list sans posts">
+								<li>
+									<figure><img src="images/post1.png" alt="">
+									</figure>
+									<div>
+										<time datetime="2013-01-01">
+											November 12, 2012
+										</time>
+										<a href="#"><strong>Lorem ipsum dolor sit amet consec tetuer</strong></a>
+									</div>
+								</li>
+								<li>
+									<figure><img src="images/post2.png" alt="">
+									</figure>
+									<div>
+										<time datetime="2013-01-01">
+											November 12, 2012
+										</time>
+										<a href="#"><strong>Lorem ipsum dolor sit am</strong></a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<time datetime="2013-01-01">
+											November 12, 2012
+										</time>
+										<a href="#"><strong>Consectetuer adipi scing elit</strong></a>
+									</div>
+								</li>
+								<li class="last">
+									<figure><img src="images/post1.png" alt="">
+									</figure>
+									<div>
+										<time datetime="2013-01-01">
+											November 12, 2012
+										</time>
+										<a href="#"><strong>Lorem ipsum dolor sit amet consec tetuer</strong></a>
+									</div>
+								</li>
+							</ul>
+							<h4 class="ind1">Recent Comments</h4>
+							<ul class="comments">
+								<li>
+									<a href="#"> James on <strong>Lorem ipsum dolor sit
+									amet consec tetuer</strong> </a>
+								</li>
+								<li>
+									<a href="#"> Admin on <strong>Dolor sit amet consec</strong> </a>
+								</li>
+								<li>
+									<a href="#"> Sarah on <strong>Dolor Ipsum sed ur per sit amet consec</strong> </a>
+								</li>
+								<li>
+									<a href="#"> Admin on <strong>Dolor sit amet consec</strong> </a>
+								</li>
+								<li class="last">
+									<a href="#"> James on <strong>Lorem ipsum dolor sit
+									amet consec tetuer</strong> </a>
+								</li>
+							</ul>
+							<a class="banner" href="#"><img src="images/banner.png" alt=""></a>
+							<h4 class="ind2">Archives</h4>
+							<ul class="archive">
+								<li>
+									<a href="#">June 2012</a>
+								</li>
+								<li>
+									<a href="#">July 2012</a>
+								</li>
+								<li>
+									<a href="#">August 2012</a>
+								</li>
+								<li>
+									<a href="#">September 2012</a>
+								</li>
+								<li>
+									<a href="#">October 2012</a>
+								</li>
+								<li class="last">
+									<a href="#">November 2012 </a>
+								</li>
+							</ul>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+-->
+				<!-- Team Page Start -->
+				<!--
+<li id="our_team" class="slide bg2">
+					<div class="main">
+						<div class="team_box">
+							<div class="team">
+								<figure>
+									<a href="#"><img src="images/team1.jpg" alt=""></a>
+								</figure>
+								<div class="text">
+									<h5>sarah Stanberg</h5>
+									<div class="stat">
+										tech support
+									</div>
+								</div>
+								<div class="social">
+									<a href="#"><img src="images/soc1.png" alt=""></a>
+									<a href="#"><img src="images/soc2.png" alt=""></a>
+									<a href="#"><img src="images/soc3.png" alt=""></a>
+									<a href="#"><img src="images/soc4.png" alt=""></a>
+									<a href="#"><img src="images/soc5.png" alt=""></a>
+								</div>
+							</div>
+							<div class="team">
+								<figure>
+									<a href="#"><img src="images/team2.jpg" alt=""></a>
+								</figure>
+								<div class="text">
+									<h5>John Doe</h5>
+									<div class="stat">
+										designer
+									</div>
+								</div>
+								<div class="social">
+									<a href="#"><img src="images/soc1.png" alt=""></a>
+									<a href="#"><img src="images/soc2.png" alt=""></a>
+									<a href="#"><img src="images/soc3.png" alt=""></a>
+									<a href="#"><img src="images/soc4.png" alt=""></a>
+									<a href="#"><img src="images/soc5.png" alt=""></a>
+								</div>
+							</div>
+							<div class="team">
+								<figure>
+									<a href="#"><img src="images/team3.jpg" alt=""></a>
+								</figure>
+								<div class="text">
+									<h5>Anna Milson</h5>
+									<div class="stat">
+										manager
+									</div>
+								</div>
+								<div class="social">
+									<a href="#"><img src="images/soc1.png" alt=""></a>
+									<a href="#"><img src="images/soc2.png" alt=""></a>
+									<a href="#"><img src="images/soc3.png" alt=""></a>
+									<a href="#"><img src="images/soc4.png" alt=""></a>
+									<a href="#"><img src="images/soc5.png" alt=""></a>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</li>
+-->
+				<!-- Team Page End -->
+
+				<!-- Contacts Page Start -->
+				<li id="contacts" class="slide bg1">
+					<div class="main">
+						<span class="map_wrapper"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97217.7828905158!2d-105.06092205!3d40.4076165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87694fa609de9417%3A0x55bf9b6c43f23c8d!2sLoveland%2C+CO!5e0!3m2!1sen!2sus!4v1439767271883" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> </span>
+						
+						<div class="wrapper">
+							<div class="col3">
+								<div class="title1"><img src="images/logo2.png" alt="logo2" />
+								</div>
+								<div class="font2">
+									<p class="p2">
+										<strong>Loveland, Colorado, USA</strong>
+									</p>
+									Sed diam nonu magna aliquam erat volutpat my nibh euismodt ut laoreet dol diam nonu magna aliquam er modt ut laoreet  diam nonu magna ali- quam erat volutpat my nibh euismodt ut laoreet dolore
+								</div>
+							</div>
+							<div class="col4">
+								<form id="contact-form">
+									<div class="success">
+										Contact form submitted!
+										<br>
+										<strong>We will be in touch soon.</strong>
+									</div>
+									<fieldset>
+										<label class="name">
+											<input type="text" value="Name">
+											<span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> </label>
+										<label class="email">
+											<input type="text" value="Email">
+											<span class="error">*This is not a valid email address.</span> <span class="empty">*This field is required.</span> </label>
+										<div class="buttons2">
+											<a href="#" data-type="submit" class="button">Send</a>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+				</li>
+				<!-- Contacts Page end -->
+			</ul>
+		</section>
+		<!--
+<aside>
+			<div class="main">
+				<div class="aside_cols">
+					<div class="aside_col">
+						<h4>Text Widget</h4>
+						<p>
+							Sed diam nonu magna aliquam erat volu tpat my nibh eui smodt ut laor eet dol diam nonu magna aliquam
+						</p>
+
+						Er modt ut laoreet  diam nonu
+						<br>
+						magna aliquam erat volutpat my nibh euismodt ut laoreet dolore
+					</div>
+					<div class="aside_col">
+						<h4>Latest Tweets</h4>
+						<div id="twitter" class="twitter"></div>
+					</div>
+					<div class="aside_col">
+						<h4>Latest portfolio</h4>
+						<ul class="portfolio2">
+							<li>
+								<a href="#"><img src="images/port1.png" alt=""></a>
+								<a href="#"><img src="images/port2.png" alt=""></a>
+								<a href="#"><img src="images/port3.png" alt=""></a>
+								<div class="clear"></div>
+							</li>
+							<li class="last">
+								<a href="#"><img src="images/port4.png" alt=""></a>
+								<a href="#"><img src="images/port5.png" alt=""></a>
+								<a href="#"><img src="images/port6.png" alt=""></a>
+								<div class="clear"></div>
+							</li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</aside>
+-->
+		<footer>
+			<div class="main">
+				Copyright 2015 - Elijah Freestone
+			</div>
+		</footer>
+	</body>
+</html>
