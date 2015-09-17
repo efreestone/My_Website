@@ -145,7 +145,7 @@ h5.ind{margin-bottom: 19px;}
 #contact-form .success {width:246px;  padding:10px;}
 #contact-form textarea, #contact-form input {margin:0;font-size:19px; border:none; border-radius: 3px; color:#45493e; padding:20px 20px 18px;outline:none; position:relative; background:#eeeeee;font-family: 'PT Sans', sans-serif;}
 #contact-form input {width:462px;}
-#contact-form textarea {overflow:auto; width:582px; height:128px; resize:none; float:left; margin: 0 0 0 0;}	
+#contact-form textarea {overflow:auto; width:462px; height:128px; resize:none; float:left; margin: 0 0 0 0;}	
 #contact-form label {display:block; min-height:82px; overflow:hidden;}	
 #contact-form label.message { display:block; padding-bottom:0; }
 #contact-form .error, #contact-form .empty, #contact-form .success {display:none;}	
