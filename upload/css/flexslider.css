@@ -32,7 +32,7 @@ html[xmlns] .slides {display: block;}
 .flexslider .banner{position: absolute;width: 100%;top: 0;left: 0;text-align: center;z-index: 99;height: 200%;}
 .flexslider .inner{font-size: 80px; line-height: 99px; color: #fff;padding-top: 123px;text-transform: none;color: #45493e;}
 .flexslider .title1, .flexslider .title2{letter-spacing: -1px;text-shadow: 2px 2px 0 #cacdc9}
-.flexslider .title1{}
+.flexslider .title1{margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto; width: 90%;}
 .flexslider .title2{margin: -26px 0 61px;}
 
 .flex-viewport {}
@@ -42,8 +42,8 @@ html[xmlns] .slides {display: block;}
 /* Direction Nav */
 .flex-direction-nav{z-index: 1;}
 .flex-direction-nav a {width: 30%; height: 100%; margin: 0px 0 0; display: block;  position: absolute; top: 0; cursor: pointer; text-indent: -9999px;z-index: 1;}
-.flex-direction-nav .flex-prev {left: 0%;background: url('../images/prev.png') 10% -150% no-repeat;}
-.flex-direction-nav .flex-next {right: 0%;background: url('../images/next.png') 90% -150% no-repeat;}
+.flex-direction-nav .flex-prev {left: 0%;background: url('../images/prev1.png') 10% -150% no-repeat;}
+.flex-direction-nav .flex-next {right: 0%;background: url('../images/next1.png') 90% -150% no-repeat;}
 .flex-direction-nav .flex-next:hover{background-position: 90% 50%;}
 .flex-direction-nav .flex-prev:hover{background-position: 10% 50%;}
 

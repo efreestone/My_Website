@@ -1,7 +1,7 @@
 <?php
 	$owner_email = $_POST["owner_email"];
-	$headers = 'From:' . $_POST["email"];
-	$subject = 'ElijahFreestone.com contact from: ' . $_POST["name"];
+	$headers = 'From: redringrepair@gmail.com';
+	$subject = 'Your new subscriber: ' . $_POST["name"];
 	$messageBody = $_POST["message"];
 	
 	if($_POST['name']!='nope'){
