@@ -28,6 +28,12 @@
 		<!-- <script src="js/jquery.tools.min.js"></script> -->
 		<script type="text/javascript">
 			$(document).ready(function() {
+				//ipad and iphone fix
+				if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {
+    				$("ul.sf-menu").bind('click',function() {
+        				$('ul.sf-menu').hideSuperfishUl();
+    				});
+				}
 				
 				$('.flexslider').flexslider({
 					animation : "none"

@@ -115,13 +115,13 @@ div .title{margin-top: auto; margin-bottom: auto; vertical-align: middle;}
 
 /* ===============================>> About Page <<========================*/
 .about_gap {height: 25px;}
-.about_content {font-size: 19px;background: #fff;border-radius: 3px;padding: 20px;}
+.about_content {font-size: 19px;background: #fff;border-radius: 3px;padding: 20px; margin-left: auto; margin-right: auto;}
 .about_text	{line-height: 22px}
 .about_links{display: block; margin-left: auto; margin-right: auto; margin-top: 15px; text-align: center;}
 .buttonGap{ margin-left: 15px; margin-right: 15px;}
 
-.team{float: left;margin-left: 20px;background: #fff;border-radius: 3px;}
-.team_box .team:first-child{margin-left: 0;}
+.team{float: left;margin-left: 20px;background: #fff;border-radius: 3px; margin-left: auto; margin-right: auto;}
+/* .team_box .team:first-child{margin-left: 0;} */
 
 .team img{border-radius: 15px;margin-right: 20px;}
 /* .team .text{text-align: center;padding: 24px 0 25px;border-bottom: 1px solid #eeeeee;} */
@@ -193,7 +193,7 @@ footer {padding:30px 0; font-size: 19px;color: #fff;}
   	#pages #services, #pages #our_team, #pages #blog, #pages #contacts, #pages #portfolio{padding: 80px 0;}
   	.offer_col{width: 290px;}
   	.port_col, .team, .aside_col{width: 286px;}
-  	.port_col img, .blog img, .team img, .portfolio2 img, .banner img{width: 100%;}
+  	.port_col img, .blog img, .portfolio2 img, .banner img{width: 100%;}
   	.col1{width: 640px;}
   	.col3{width: 560px;}
   	.portfolio2 a{width: 80px;height: 80px;}
@@ -207,6 +207,8 @@ footer {padding:30px 0; font-size: 19px;color: #fff;}
 	.port_box{padding-bottom: 0; padding-top: 10px;}
 	.portfolio2 a{width: 80px;height: 80px;}
 	.title1{font-size: 30px;}
+	.team{float: left;margin-left: 0px;background: #fff;border-radius: 3px; margin-left: auto; margin-right: auto;}
+	.team figure img{display: block; margin-left: auto; margin-right: auto; width: 90%;}
 	.flex-direction-nav .flex-prev {background: url('../images/prev1.png') no-repeat;}
 	.flex-direction-nav .flex-next {background: url('../images/next1.png') no-repeat;}
 	.flex-direction-nav .flex-next{background-position: 90% 50%;}
@@ -225,7 +227,8 @@ footer {padding:30px 0; font-size: 19px;color: #fff;}
  	.flexslider .inner .button{display: none}
  	.title1{font-size: 25px;}
  	.buttonGap{margin-left: 0px; margin-right: 0px; margin-bottom: 10px;  margin-top: 10px;}
- 	.team img{display: block; margin-left: auto; margin-right: auto;}
+ 	.team{float: left;margin-left: 0px;background: none;border-radius: 0px; margin-left: auto; margin-right: auto;}
+ 	.team img{display: block; margin-left: auto; margin-right: auto; width: 90%;}
  	.blog_nav > li{width: auto;margin: 0 5px;padding-left: 10px;border: none;}
  	.blog_nav > li a{display: inline;}
  	.blog_nav{background: none;}
