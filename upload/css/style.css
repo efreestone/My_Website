@@ -4,14 +4,15 @@
 @import "../css/touchTouch.css";
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic);
 article,aside,audio,canvas,command,datalist,details,embed,figcaption,figure,footer,header,hgroup,keygen,meter,nav,output,progress,section,source,video{display:block}mark,rp,rt,ruby,summary,time{display:inline}
-/* Global properties ======================================================== */
+
+/*********************************>> Global Properties <<*********************************/
 html {width:100%}
 
-body {font-family: 'PT Sans', sans-serif;font-size:14px; line-height:19px; color:#424242; min-width:1030px; background:#2c2c2c;-webkit-text-size-adjust: none;}
+body {font-family: "Helvetica", sans-serif; font-size:14px; line-height:19px; color:#424242; min-width:1030px; background:#2c2c2c;-webkit-text-size-adjust: none;}
 
 .main{width: 940px; margin: 0 auto;}
 
-/*********************************fonts*************************************/
+/*********************************>> Fonts <<*********************************/
 .reg {text-transform:none}
 .f_left {float:left}
 .f_right {float:right}
@@ -21,7 +22,7 @@ body {font-family: 'PT Sans', sans-serif;font-size:14px; line-height:19px; color
 .it{font-style:italic}
 .let{letter-spacing:-1px}
 
-/*********************************CLASSES**********************************/
+/*********************************>> Classes <<*********************************/
 .m_bottom_zero{ margin-bottom:0 !important;}
 .m_left_zero{ margin-left:0 !important;}
 .p_bottom_zero{ padding-bottom:0 !important;}
@@ -36,31 +37,29 @@ body {font-family: 'PT Sans', sans-serif;font-size:14px; line-height:19px; color
 .bg_none{ background:none !important;}
 .bg_none:after{display: none !important;}
 
-/*==================================== Links ======================================================== */
+/*********************************>> Links <<*********************************/
 a {color:#424242;outline:none; text-decoration:none; cursor:pointer;}
 a:hover{ color:#b6c600; text-decoration:none;}
 
-/*********************************Displays*************************************/
+/*********************************>> Displays <<*********************************/
 .block{ display:block;}
 .inline-block{ display:inline-block;}
 
-/*********************************header*************************************/
-
+/*********************************>> Header <<*********************************/
 header {width: 100%;position: fixed; background: #3d3d3d;height: 90px;left: 0;top: 0;z-index: 10;box-shadow: 0 0 15px rgba(0,0,0,0.75)}
 header .inner{padding: 16px 0 0 0;}
 header h1{float: left;margin-left: 21px;}
 header h1 a {display:block;width:185px;height:58px;background:url(../images/logo.png) 0 0 no-repeat; text-decoration:none; text-indent:-9999px;}
 
-/*********************************content*************************************/
+/*********************************>> Content <<*********************************/
 #content {padding:0 0px 0px;position: relative;z-index: 1;min-height: 1500px;}
 .cont_pad{padding:0 0 0 0 !important;}
 
-/*===============================>> Paragraphs <<=============================*/
-
+/*********************************>> Paragraphs <<*********************************/
 p {margin-bottom:19px}
 .p2{ margin-bottom:22px;}
 
-/*================================>> H <<========================================*/
+/*********************************>> H <<*********************************/
 h2,h3{ font-weight:normal;}
 h2{font-size: 23px; line-height: 29px; color:#4e4e4e;margin-bottom: 10px;}
 h2.h2{background: url('../images/stripe1.png') 0 bottom repeat-x;padding-bottom: 26px;}
@@ -78,17 +77,19 @@ h4.ind2{margin-bottom: 19px;}
 h5{font-size: 21px; line-height: 25px; text-transform: uppercase; color: #4e4e4e;margin-bottom: 1px;}
 h5.ind{margin-bottom: 19px;}
 
-/*================================>> hovers <<========================================*/
+/*********************************>> Hovers <<*********************************/
 .port_box .port_col>a span, .port_box .port_col>a em{-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;}
 
 .flex-direction-nav a, .social_box img, .sf-menu a, .offer_col>a, .offer_col span, .offer_col>a .description:before, .blog_nav a, #content a, .portfolio2 a{-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease;-o-transition: all 0.3s ease;transition: all 0.3s ease;}
-/*********************************page_1*************************************/
+
+/*********************************>> Page1 <<*********************************/
 div .title{margin-top: auto; margin-bottom: auto; vertical-align: middle;}
 .ext_list>li, .ext_box{ }
 .ext_list>li>figure, .ext_box>figure{ float:left;}
 .ext_list>li>div, .ext_box>div{overflow:hidden;}
 .ext_box1>figure{display: block;}
-/*================================>> Main Page<<========================================*/
+
+/*********************************>> Main Page <<*********************************/
 #pages{position: relative;}
 #pages>li{width: 100%;}
 
@@ -101,7 +102,7 @@ div .title{margin-top: auto; margin-bottom: auto; vertical-align: middle;}
 .bg1{background: #f9f9f9;}
 .bg2{background: #f0f0f0;}
 
-/********************************* Portfolio Page *************************************/
+/*********************************>> Portfolio Page <<*********************************/
 .port_box{padding-bottom: 51px; padding-top: 20px;}
 .port_col{margin-left: 20px;width: 300px;float: left;}
 .port_box .port_col:first-child{margin-left: 0;}
@@ -113,7 +114,7 @@ div .title{margin-top: auto; margin-bottom: auto; vertical-align: middle;}
 .port_box .port_col>a span{display: block;width: 91px;height: 91px;top: -150%;position: absolute;left: 50%;margin:-46px 0 0 -46px;background: url('../images/zoom.png') no-repeat;}
 .port_box .port_col>a:hover span{top: 50%;}
 
-/* ===============================>> About Page <<========================*/
+/*********************************>> About Page <<*********************************/
 .about_gap {height: 25px;}
 .about_content {font-size: 19px;background: #fff;border-radius: 3px;padding: 20px; margin-left: auto; margin-right: auto;}
 .about_text	{line-height: 22px}
@@ -127,7 +128,7 @@ div .title{margin-top: auto; margin-bottom: auto; vertical-align: middle;}
 /* .team .text{text-align: center;padding: 24px 0 25px;border-bottom: 1px solid #eeeeee;} */
 .team .stat{font-size: 19px;line-height: 24px;color: #a2a49e;}
 
-/*================================>> Contact Page <<========================================*/
+/*********************************>> Contact Page <<*********************************/
 .col3{width: 400px; float: left;}
 .col4{width: 500px; margin-left: 40px; float: left;}
 
@@ -151,7 +152,12 @@ div .title{margin-top: auto; margin-bottom: auto; vertical-align: middle;}
 .noscript_error{text-align:left; color:red; font-size:21px; clear:both;}
 .title1{margin-bottom: 35px;}
 
-/****************************ASIDE************************/
+/*********************************>> Resume Page <<*********************************/
+#resume_title{font-size: 26px; color: #3F8025; display: block; margin-left: auto; margin-right: auto; margin-top: 5px; text-align: center;}
+#section_title{color: #3F8025;}
+#bullet_list{padding-left: 35px;}
+
+/*********************************>> Aside <<*********************************/
 aside{background: #3d3d3d;padding: 44px 0 15px;color: #f9f9f9;font-size: 19px;line-height: 23px;}
 aside h4{color: #f9f9f9;margin-bottom: 20px;}
 aside p{margin-bottom: 22px;}
@@ -169,7 +175,7 @@ aside p{margin-bottom: 22px;}
 .portfolio2 li a:first-child{margin-left: 0;}
 .portfolio2 a:hover{box-shadow: 0 0 6px #89a100;}
 
-/*================================>> Footer <<========================================*/
+/*********************************>> Footer <<*********************************/
 footer {padding:30px 0; font-size: 19px;color: #fff;}
 .social{ overflow:hidden;text-align: center;padding: 13px 0;}
 .social a{ display:inline-block;height:34px; overflow:hidden;margin: 0 9px;}
@@ -177,12 +183,13 @@ footer {padding:30px 0; font-size: 19px;color: #fff;}
 .social a:hover img{ margin-top:-34px;}
 .privacy{float: left;padding-top: 2px;}
 
-/*==================================RESPONSIVE LAYOUTS===============================================*/
+/*********************************>> Responsive Layouts <<*********************************/
 @media only screen and (max-width: 1024px) {
 	body{min-width:960px;}
 	.flexslider .inner{padding-top: 40px;font-size: 60px;line-height: 74px;}
 	nav{margin: 0 0px 0 0;}
 }
+
 @media only screen and (max-width: 995px) {
  	body{min-width:920px;}
  	.main{width: 900px;}
