@@ -1,7 +1,9 @@
+/*
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic);
 article,aside,audio,canvas,command,datalist,details,embed,figcaption,figure,footer,header,hgroup,keygen,meter,nav,output,progress,section,source,video{display:block}mark,rp,rt,ruby,summary,time{display:inline}
+*/
 
-body {font-family: 'PT Sans', sans-serif;font-size:20px; line-height:22px; color:#424242; -webkit-text-size-adjust: none; min-height: 325px;}
+body {font-family: 'Helvetica', sans-serif;font-size:20px; line-height:22px; color:#424242; -webkit-text-size-adjust: none; min-height: 325px;}
 
 /*************** Icon ***************/
 .iconWrap{float: left; margin:10px 40px 0 10px;}
