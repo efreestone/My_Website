@@ -8,7 +8,7 @@ article,aside,audio,canvas,command,datalist,details,embed,figcaption,figure,foot
 /*********************************>> Global Properties <<*********************************/
 html {width:100%}
 
-body {font-family: "Helvetica", sans-serif; font-size:14px; line-height:19px; color:#424242; min-width:1030px; background:#2c2c2c;-webkit-text-size-adjust: none;}
+body {font-family: "Helvetica", sans-serif; font-size:14px; line-height:19px; color:#424242; min-width:1030px; background:#D4DBD2;-webkit-text-size-adjust: none;}
 
 .main{width: 940px; margin: 0 auto;}
 
@@ -176,17 +176,29 @@ aside p{margin-bottom: 22px;}
 .portfolio2 a:hover{box-shadow: 0 0 6px #89a100;}
 
 /*********************************>> Footer <<*********************************/
-footer {padding:30px 0; font-size: 19px;color: #fff;}
+footer {padding:30px 0; font-size: 19px;color: #fff; background-color: #3d3d3d}
 .social{ overflow:hidden;text-align: center;padding: 13px 0;}
 .social a{ display:inline-block;height:34px; overflow:hidden;margin: 0 9px;}
 .social a:first-child{margin: 0 0 0 0;}
 .social a:hover img{ margin-top:-34px;}
 .privacy{float: left;padding-top: 2px;}
 
+
+/* .flexslider .slides {max-height: 450px} */
+
 /*********************************>> Responsive Layouts <<*********************************/
+@media only screen and (max-width: 1120px) {
+	.flexslider .inner{font-size: 75px}
+}
+
+@media only screen and (max-width: 1120px) {
+	.flexslider .inner{font-size: 70px}
+}
+
 @media only screen and (max-width: 1024px) {
 	body{min-width:960px;}
-	.flexslider .inner{padding-top: 40px;font-size: 60px;line-height: 74px;}
+	.flexslider .inner{padding-top: 40px;font-size: 65px;line-height: 74px;}
+	.banner {max-height: 250px}
 	nav{margin: 0 0px 0 0;}
 }
 
