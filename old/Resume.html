@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Elijah Freestone</title>
+		<meta charset="utf-8">
+		<meta name="robots" content="noarchive">
+		<meta name="description" content="Website for the Mobile Developer Elijah Freestone">
+		
+		<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.responsivemenu.js"></script>
+		<script src="js/jquery.scrollTo.js"></script>
+		<!-- <script src="js/jquery.nav.js"></script> -->
+		<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+		<script src="js/jquery.scrollTo-1.4.3.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/forms.js"></script>
+		<!-- <script src="js/touchTouch.jquery.js"></script> -->
+		<script src="js/jquery.tweet.js"></script>
+		<script src="js/script.js"></script>
+		<script type="text/javascript" src="js/fancybox/jquery.fancybox.js?v=2.1.5"></script>
+		<!-- <script src="js/overlay.apple.js"></script> -->
+		<!-- <script src="js/portfolio.js"></script> -->
+		<!-- <script src="js/overlay.js"></script> -->
+		<!-- <script src="js/jquery.tools.min.js"></script> -->
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				//ipad and iphone fix
+				if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {
+    				$("ul.sf-menu").bind('click',function() {
+        				$('ul.sf-menu').hideSuperfishUl();
+    				});
+				}
+				
+				$('.flexslider').flexslider({
+					animation : "none"
+				});
+
+				/* $('.port_col a').touchTouch(); */
+				$('.port_col a').append('<em></em><span></span>');
+				
+				$('.fancybox').fancybox({
+        			'autoSize': true
+				});
+			});
+			
+			$(function() {
+				/*
+$('.sf-menu').onePageNav({
+					begin : function() {
+
+					},
+					end : function() {
+
+					},
+					scrollOffset : 80
+				});
+*/
+				$('.main-menu').prepend('<div id="menu-icon"></div>');
+				$("#menu-icon").on("click", function() {
+					$(".sf-menu").slideToggle();
+					$(this).toggleClass("active");
+				});
+			});
+		</script>
+		<!--[if lt IE 8]>
+		<div style=' clear: both; text-align:center; position: relative;'>
+		<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+		<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+		</a>
+		</div>
+		<![endif]-->
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="js/html5.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+		<![endif]-->
+	</head>
+	<body>
+		<!--==============================header=================================-->
+		<header>
+			<div class="inner">
+				<div class="main">
+					<h1><a class="logo" href="index.html">Elijah Freestone</a></h1>
+					<nav class="main-menu">
+						<ul class="sf-menu">
+							<li class="current">
+								<a href="/">Home</a>
+							</li>
+							<li>
+								<a target="_blank" href="/Resume.pdf">PDF Format</a>
+							</li>
+						</ul>
+						<div class="clear"></div>
+					</nav>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</header>
+		<!--==============================content================================-->
+		<section id="content">
+			<ul id="pages">
+				<!-- Home page -->
+				<li id="home" class="slide">
+					<div class="inner">
+						
+					</div>
+				</li>
+				<!-- home page end -->
+				
+				<!-- Resume Page Start -->
+				<li id="about" class="slide bg2">
+					<div class="main">
+						<div class="about_gap"></div>
+						<div class="about_content">
+							<div class="team_box">
+								<h2 id="resume_title">
+									<b>Elijah Freestone</br></b>
+								
+									4220 Page Place</br>
+									
+									Loveland, CO 80537</br>
+									
+									Cell - (970) 988-8190</br>
+									
+									efreestone@fullsail.edu
+								</h2>
+								<div class="about_links">
+									<a href="https://github.com/efreestone" target="_blank"> 
+										<img src="images/GitHub_Logo.png" alt="View Elijah's GitHub">
+									</a>
+									<a class="buttonGap" href="#"></a>
+									<a href="https://www.linkedin.com/pub/elijah-freestone/55/738/823" target="_blank">
+      									<img src="images/linkedin_myprofile.png" alt="View Elijah's LinkedIn">
+        							</a>
+								</div>
+								
+								<div class="about_text"> 
+									</br></br>
+									<div id="section_title">EXPERIENCE</div>
+									<b>Independent Mobile Developer</b></br>
+									Loveland, Colorado</br>
+									5/2015 – present</br></br> 
+									
+									<ul id="bullet_list" style="list-style-type:circle">
+										<li>
+											Develop Mobile Applications, primarily iOS using Objective-C and Swift 2.0+
+										</li>
+										<li>
+											Built one iOS game with Objective-C and SpriteKit with Game Center integration, and released to the App Store. <i>AstorBlast Invasion</i> can be found at <a target="_blank" href="http://itunes.apple.com/us/app/astroblast-invasion/id1018098075">http://itunes.apple.com/us/app/astroblast-invasion/id1018098075</a>
+										</li>
+										<li>
+											Built a drawing application written in Swift using UIKit. <i>Quick Doodle</i> can be found at <a target="_blank" href="http://itunes.apple.com/us/app/quick-doodle/id1069691400">http://itunes.apple.com/us/app/quick-doodle/id1069691400</a>
+										</li>
+										<li>
+											Highly modified website template/theme using HTML5/CSS3/Javascript/JQuery to launch own website, ElijahFreestone.com
+										</li>
+										<li>
+											Currently finishing development on an open format Beer/Wine Recipe app called My Brew Log using Objective-C and Parse backend. App includes note taking and timer functionality. An Android version will also be built in the future
+										</li>
+										<li>
+											Two additional iOS games are in various stages of development. One in Objective-C and the other in Swift
+										</li>
+										<li>
+											A gesture based to-do list application called Swipe ToDo is also in development, using Swift 2.1. All interactions with the application are gesture based such as swipe right to mark completed, swipe left and hold to delete, etc
+										</li>
+									</ul>
+									
+								<!-- Second Experience -->
+									
+									</br></br>
+									<b>Freelance/Student Mobile Developer, Full Sail University</b></br>
+									Winter Park, Florida (online/remote)</br>
+									3/2012 – 5/2015</br></br> 
+									
+									Although technically academic in nature, the Mobile Development program at FSU is designed to be a real world equivalent, with strict deadlines and a very fast-paced environment. Applications were delivered on a monthly basis.</br></br>
+									
+									<ul id="bullet_list" style="list-style-type:circle">
+										<li>
+											Developed multiple Web App/Hybrid projects <a target="_blank" href="http://github.com/efreestone/AVF/tree/master/Project4iOS">(1)</a> using HTML5, CSS3 and Javascript/JQuery. Hybrid applications utilized the PhoneGap Framework 
+										</li>
+										<li>
+											Developed several iOS projects with Objective-C <a target="_blank" href="http://github.com/efreestone/ADP1/tree/master/My Treasure Vault">(2)</a>, and one iOS game with Objective-C and SpriteKit <a target="_blank" href="http://github.com/efreestone/IAD_Freestone/tree/master/Project4">(3)</a>. Game Center was later added to this game and released to the App Store
+										</li>
+										<li>
+											Developed multiple Android projects <a target="_blank" href="http://github.com/efreestone/ClientContactPro">(4)</a>
+										</li>
+										<li>
+											Developed a cross-platform (Android and iOS) Contacts application. This utilized Parse backend, full network checking, and custom Regular Expressions to validate and format phone numbers <a target="_blank" href="http://github.com/efreestone/CPM_Freestone/tree/master/Project3Android">(5</a>, <a target="_blank" href="http://github.com/efreestone/CPM_Freestone/tree/master/Project4iOS">6)</a>
+										</li>
+										<li>
+											Two additional iOS games are in various stages of development. One in Objective-C and the other in Swift
+										</li>
+										<li>
+											Some projects also include working with third party APIs and backend services such as CouchDB and Parse <a target="_blank" href="http://github.com/efreestone/IPD_Freestone/tree/master/MyBrewLogGold">(7, final project)</a>
+										</li>
+										
+									</ul>
+									</br>
+									
+									Links to sample project repositories at Github.com for each are as follows:
+									</br></br>
+									
+									<ol>
+										<li>1: <a target="_blank" href="http://github.com/efreestone/AVF/tree/master/Project4iOS">
+											http://github.com/efreestone/AVF/tree/master/Project4iOS
+										</a></li>
+										<li>2: <a target="_blank" href="http://github.com/efreestone/ADP1/tree/master/My Treasure Vault">
+											http://github.com/efreestone/ADP1/tree/master/My Treasure Vault
+										</a></li>
+										<li>3: <a target="_blank" href="http://github.com/efreestone/IAD_Freestone/tree/master/Project4">
+											http://github.com/efreestone/IAD_Freestone/tree/master/Project4
+										</a></li>
+										<li>4: <a target="_blank" href="http://github.com/efreestone/ClientContactPro">
+											http://github.com/efreestone/ClientContactPro
+										</a></li>
+										<li>5: <a target="_blank" href="http://github.com/efreestone/CPM_Freestone/tree/master/Project3Android">
+											http://github.com/efreestone/CPM_Freestone/tree/master/Project3Android
+										</a></li>
+										<li>6: <a target="_blank" href="http://github.com/efreestone/CPM_Freestone/tree/master/Project4iOS">
+											http://github.com/efreestone/CPM_Freestone/tree/master/Project4iOS
+										</a></li>
+										<li>7: <a target="_blank" href="http://github.com/efreestone/IPD_Freestone/tree/master/MyBrewLogGold">
+											http://github.com/efreestone/IPD_Freestone/tree/master/MyBrewLogGold
+										</a></li>
+									</ol>
+									</br>
+
+									Additional projects can be found at <a target="_blank" href="http://github.com/efreestone">http://github.com/efreestone</a> and video walkthroughs from throughout the program are available at <a target="_blank" href="http://www.youtube.com/user/MrEFreestone">http://www.youtube.com/user/MrEFreestone</a> </br>
+									
+							
+								<!-- Other Experience -->
+								
+									</br></br>
+									<div id="section_title">OTHER EXPERIENCE / WORK HISTORY</div>
+									<b>Technical Department, Dancing Tree Center (nonprofit)</b></br>
+									Loveland, Colorado</br>
+									8/2010 – 12/2015 (Part time after 8/2012)</br></br> 
+									
+									<ul id="bullet_list" style="list-style-type:circle">
+										<li>
+											Responsible for Maintaining, Troubleshooting and Repairing computer and presentation systems used to teach various classes
+										</li>
+										<li>
+											Maintain, Troubleshoot and Repair fax, phone and printers										
+										</li>
+									</ul>
+									
+								<!-- Other Experience 2 -->
+								
+									</br></br>
+									<b>Owner/Repair Technician, Red Ring Repair </b></br>
+									Loveland, Colorado</br>
+									9/2009 – present (Part time after 8/2012)</br></br> 
+									
+									<ul id="bullet_list" style="list-style-type:circle">
+										<li>
+											Responsible for Troubleshooting and Repairing personal electronics (Videogame Consoles, Computers, etc.)
+										</li>
+									</ul>
+									
+								<!-- Other Experience 3 -->
+								
+									</br></br>
+									<b>Co-owner/Graphic Designer/Sign Builder, Alpha & Omega Signworks </b></br>
+									Loveland, Colorado</br>
+									4/2008 – 9/2009 </br></br> 
+									
+									<ul id="bullet_list" style="list-style-type:circle">
+										<li>
+											In charge of creating Designs and Graphic/Logos for customer signage, stickers, and banners for multiple clients
+										</li>
+										<li>
+											Supervised and Involved with Building and Repairing signage
+										</li>
+										<li>
+											Cut and built stickers and banners 
+										</li>
+										<li>
+											Maintained Large Format Printer and Plotter
+										</li>
+										<li>
+											Responsible for Billing and Customer Relations										
+										</li>
+										<li>
+											Wrote and designed marketing materials for fliers, print and online advertisements
+										</li>
+									</ul>
+
+									
+								<!-- Experience end -->
+								
+								<!-- Skills -->
+								
+									</br></br>
+									<div id="section_title">SKILLS</div>				
+									<ul id="bullet_list" style="list-style-type:circle">
+										<li>
+											<b>Programming/Languages:</b> Objective-C, Swift 2.0+, Java, C/C++ (limited), HTML 5, CSS3, JavaScript, XML, JSON, PHP (limited)
+										</li>
+										<li>
+											<b>Frameworks:</b> Cocoa (OS X) & Cocoa Touch (iOS) Frameworks, Core Data (limited), Quartz/Core Graphics, SpriteKit, GameKit, UIKit, Android SDK/NDK, JQuery/JQuery Mobile, Corona SDK, Ajax Framework										
+										</li>
+										<li>
+											<b>Source Code Control:</b> GIT via terminal, SmartGit, Github.com, BitBucket.com										
+										</li>
+										<li>
+											<b>Databases:</b> CouchDB, Parse Core and Push Services, SQL Server, Firebase										
+										</li>
+										<li>
+											<b>IDE & Design Tools:</b> Eclipse, ADT Plugin, Android Studio, Xcode, Coda 2, TextWrangler, PhoneGap, Adobe Creative Suite 5/6/CC (Illustrator, PhotoShop), Xcode Storyboard, Sprite Builder										
+										</li>
+										<li>
+											<b>Office Tools:</b> MS Word, Excel, PowerPoint, Outlook (Windows and Mac)										
+										</li>
+										<li>
+											<b>Operating Systems:</b> Mac OS X 10.5 and up, Windows XP and up, Android, iOS										
+										</li>
+										<li>
+											<b>Lingual Skills:</b> English (native) - read, write and speak.										
+										</li>
+									</ul>
+									
+								<!-- Education -->
+								
+									</br></br>
+									<div id="section_title">EDUCATION</div>
+									Full Sail University - May 2015 </br>
+									Bachelors of Science in Mobile Development </br> 
+									Course Directors Award in Technical Writing, 3.76 GPA </br> 
+									Transcript available on request </br> 
+									
+								<!-- References -->
+								
+									</br></br>
+									<div id="section_title">REFERENCES</div>
+									References available on request </br>
+									
+								</div> <!-- about_text end -->
+							</div>
+							<div class="clear"></div>
+						</div> <!-- team_box end -->
+						<div class="about_gap"></div>
+					</div> <!-- about_content end -->
+				</li>
+				<!-- Resume Page End -->
+				
+				
+				
+			</ul>
+		</section>
+		
+		<footer>
+			<div class="main">
+				Copyright 2015 - Elijah Freestone
+			</div>
+		</footer>
+	</body>
+</html>

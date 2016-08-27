@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Elijah Freestone</title>
+		<meta charset="utf-8">
+		<meta name="robots" content="noarchive">
+		<meta name="description" content="Website for the Mobile Developer Elijah Freestone">
+		
+		<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.responsivemenu.js"></script>
+		<script src="js/jquery.scrollTo.js"></script>
+		<script src="js/jquery.nav.js"></script>
+		<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+		<script src="js/jquery.scrollTo-1.4.3.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/forms.js"></script>
+		<!-- <script src="js/touchTouch.jquery.js"></script> -->
+		<script src="js/jquery.tweet.js"></script>
+		<script src="js/script.js"></script>
+		<script type="text/javascript" src="js/fancybox/jquery.fancybox.js?v=2.1.5"></script>
+		<!-- <script src="js/overlay.apple.js"></script> -->
+		<!-- <script src="js/portfolio.js"></script> -->
+		<!-- <script src="js/overlay.js"></script> -->
+		<!-- <script src="js/jquery.tools.min.js"></script> -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				//ipad and iphone fix
+				if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {
+    				$("ul.sf-menu").bind('click',function() {
+        				$('ul.sf-menu').hideSuperfishUl();
+    				});
+				}
+				
+				$('.flexslider').flexslider({
+					animation : "none"
+				});
+
+				/* $('.port_col a').touchTouch(); */
+				$('.port_col a').append('<em></em><span></span>');
+				
+				$('.fancybox').fancybox({
+        			'autoSize': true
+				});
+			});
+			
+			$(function() {
+				$('.sf-menu').onePageNav({
+					begin : function() {
+
+					},
+					end : function() {
+
+					},
+					scrollOffset : 80
+				});
+				$('.main-menu').prepend('<div id="menu-icon"></div>');
+				$("#menu-icon").on("click", function() {
+					$(".sf-menu").slideToggle();
+					$(this).toggleClass("active");
+				});
+			});
+		</script>
+		<!--[if lt IE 8]>
+		<div style=' clear: both; text-align:center; position: relative;'>
+		<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+		<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+		</a>
+		</div>
+		<![endif]-->
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="js/html5.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+		<![endif]-->
+	</head>
+	<body>
+		<!--==============================header=================================-->
+		<header>
+			<div class="inner">
+				<div class="main">
+					<h1><a class="logo" href="index.html">Elijah Freestone</a></h1>
+					<nav class="main-menu">
+						<ul class="sf-menu">
+							<li class="current">
+								<a href="#writing1">Sample 1</a>
+							</li>
+							<li>
+								<a href="#writing2">Sample 2</a>
+							</li>
+							<li>
+								<a href="/">Home</a>
+							</li>
+						</ul>
+						<div class="clear"></div>
+					</nav>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</header>
+		<!--==============================content================================-->
+		<section id="content">
+			<ul id="pages">
+				<!-- Home page -->
+				<!--
+<li id="home" class="slide">
+					<div class="inner">
+						<div class="flexslider">
+							<ul class="slides">
+								<li>
+									<img src="images/slide1.png" alt="">
+									<div class="banner">
+										<div class="inner">
+											<div class="title">
+												<div class="title1">
+													<strong>Elijah Freestone</strong> is a Mobile Developer from Colorado
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+-->
+				<li id="home" class="slide">
+					<div class="inner">
+						
+					</div>
+				</li>
+				<!-- home page end -->
+				
+				<!-- Writing 1 Page Start -->
+				<li id="writing1" class="slide bg2">
+					<div class="main">
+						<div class="about_gap"></div>
+						<div class="about_content">
+							<div class="team_box">
+								<h2 id="description">
+									<i>Sample 1: The following is a mock proposal for a mobile app, written for an assignment in Technical Writing. The premise of the assignment is to formally propose an application idea to an investor after a successful elevator pitch.</i>
+								</h2>
+								
+								</br></br>
+								<h2 id="resume_title">
+									<b>HEALTH TRACKER + MOBILE APPLICATION</br></b>
+								
+									Track all your health requirements with one application</br>
+								</h2>
+								<div class="about_text">
+								<div id="section_title"><b>Background</b></div> 
+								As our population ages and the average life expectancy continues to rise, the need to actively maintain ones health is growing ever more important. Although there are various health and medication related applications available on the mobile market, they are usually focused on a single aspect of the users health. Whether the app is concentrated on tracking medications or the users vitals, there are many other areas of an individual’s health that require attention. The user would need multiple applications on their mobile device to track each of these areas. This can become very complicated.
+								
+								</br></br>
+								<div id="section_title"><b>Proposal</b></div> 
+								The primary goal of Health Tracker + is to provide the user with a single, intuitive mobile application to keep track of major aspects of their health regimen. The main features would include tracking medications, doctors appointments, the users vitals, and providing basic diet and workout tips, loosely based on the users current health and goals. The medications portion would include prescription information with dosage and instructions, current inventory of the medication, remaining refills, the users history for the medication, and expiration date. The user can set reminders for when they need to take their medications and when they are in need of a refill or the expiration date is approaching. Doctors appointments would include appointment date and time, address and contact information for the doctor, and notes for the appointment. The user would have access to their appointment history for specific doctors offices and information about the appointments, as well as be able set reminders for upcoming appointments. The vitals section would include tracking the users major vitals such as heart rate, blood sugar, temperature, and weight. It would also include a section for the user to add goals or doctors recommendations for their vitals. Although the vitals portion of the app would be optional, the information the user inputs would be used to help adjust the diet and workout tips the application provides. The entire application would be a secure platform requiring users to log in and authenticate before having access to any of their data. This data would be securely stored online and accessible from a web interface as well. The free version would include advertisements and a limited number of entries for medication and doctors appointments. The paid version would remove ads and add unlimited entries. In-app purchases such as in-depth diet and workout tips would be available. The application would be available on both iOS and Android devices.
+								
+								</br></br>
+								<div id="section_title"><b>Research</b></div>
+								Initial small-scale primary research was done in the form of an online survey, and shows an interest in an application like Health Tracker +. Of the eighteen individuals surveyed, eleven (61.11%) answered yes the application would be useful to them. The remaining seven (38.89%) participant answered maybe. None of those surveyed said this application would not be useful. The average price participants were willing to pay for Health Tracker + was $2.49 and in-app purchases of $1 or more each, depending on the feature.
+								
+								</br></br>
+								<div id="section_title"><b>Schedule</b></div>
+								The development schedule for Health Tracker + is as follows:
+								<ul id="bullet_list">
+									<ul id="bullet_list">
+										<li>
+											January 2-10, 2014: Perform in-depth research
+										</li>
+										<li>
+											January 11-15, 2014: Create working prototype
+										</li>
+										<li>
+											January 16-18, 2014: Hire team for prototype testing
+										</li>
+										<li>
+											January 19-27, 2014: Perform field-testing of prototype
+										</li>
+										<li>
+											January 28-March 1, 2014: Develop application (iOS and Android)
+										</li>
+										<li>
+											March 2-4, 2014: Recruit Beta testers
+										</li>
+										<li>
+											March 5-14, 2014: Beta-test application
+										</li>
+										<li>
+											March 5-25, 2014: Fix any issues in the application found during Beta-testing
+										</li>
+										<li>
+											March 31, 2014: Submit application to marketplaces (iOS and Android)
+										</li>
+									</ul>
+								</ul>
+								
+								</br></br>
+								<div id="section_title"><b>Qualifications</b></div>
+								Development of Health Tracker + will require hiring four teams. The first team consists of three researchers with experience defining the mobile application specifications. The second time consists of four individuals with experience with field and beta testing of mobile applications and one person with a background in prototyping. Teams three and four each consist of two designers, three programmers, and one platform manager. One of these teams needs to specialize in the Android device platform, while the other team specializes in the iOS platform.
+								
+								</br></br>
+								<div id="section_title"><b>Budget</b></div>
+								Development costs for Health Tracker + are as follows:
+								<ul id="bullet_list">
+									<ul id="bullet_list">
+										<li>
+											In-depth Research: 40 hours at $25/hour * 3 = $3,000
+										</li>
+										<li>
+											Prototyping: 30 hours at $30/hour = $900
+										</li>
+										<li>
+											Prototype Testing: 50 hours at $25/hour * 4 = $5,000
+										</li>
+										<li>
+											Application Development: $34,400 per platform
+										</li>
+										
+										<ul id="bullet_list">
+											<ul id="bullet_list">
+												<li>
+													Each Platform:
+												</li>
+													Design: 50 hours at $40 * 2 = $4,000
+												<li>
+													Programming: 160 hours at $50/hour * 3 = $24,000
+												</li>
+												<li>
+													Management: 160 hour at $40/hour = $6,400 
+												</li>
+												<ul id="bullet_list">
+													<ul id="bullet_list">
+														<li>
+															Development Total: $34,400 * 2 = $66,800
+														</li>
+													</ul>
+												</ul>
+												</br>
+											</ul>
+										</ul>
+										
+										<li>
+											Grand Total: $75,700
+										</li>
+										
+									</ul>
+								</ul>
+								</br>
+								You will receive 30% ownership of the application for your investment of $75,700. The paid version of the application would cost $2.49. A modest estimate of 50,000 paid downloads per year would return your initial investment in two years time at $.75 per download. Revenue from advertising and in-app purchase should return an additional 25% return of your investment per year. 
+								
+								</br></br>
+								<div id="section_title"><b>Conclusions</b></div>
+								We at OnTrack Health, Inc. feel there is a strong market for Health Tracker +. We ask you to invest $75,700 so we can develop this application and bring it to market. I would like to set up a meeting on December 12, 2013 at 9:00am Mountain Standard Time to discuss this opportunity further. Production of the application must be started by January 2, 2014 in order to be on the market by the end of March. I must set a deadline of December 30, 2013 to keep the application development on schedule.
+	
+								</br></br>
+								Elijah Freestone - OnTrack Health, Inc., December 6, 2013
+
+								</div> <!-- about_text close -->
+								
+								<div class="about_links">
+									
+									<a target="_blank" href="/Proposal.pdf" class="button">PDF Format</a>
+								</div>
+								
+							</div>
+						
+							<div class="clear"></div>
+						</div>
+						<div class="about_gap"></div>
+					</div>
+				</li>
+				<!-- Writing 1 Page End -->
+				
+				<!-- Writing 2 Page Start -->
+				<li id="writing2" class="slide bg2">
+					<div class="main">
+						<div class="about_gap"></div>
+						<div class="about_content">
+							<div class="team_box">
+								<h2 id="description">
+									<i>Sample 2: The following is from a forum style discussion board assignment about our preferred development platform with statistics (salaries in our market, growth potential, etc) and references to argue our point. It includes my initial post, and responses to posts of other students. Theirs are unfortunately not included. These were written for Project Management 7. Names have been changed to protect the innocent :)</i>
+								</h2>
+								
+								</br></br>
+								<h2 id="resume_title">
+									Initial post, Android vs iOS:</br>
+								</h2>
+								<div class="about_text">
+								Hey everyone, </br>
+								I prefer Android for my personal device primarily because of the use of widgets. When it comes to creating apps however, I slightly prefer to develop for iOS in most cases. Both platforms are great and each has their advantages. I am simply more comfortable with Objective-C and the iOS SDK. Other reasons I would prefer developing for iOS are as follows:
+								</br></br>
+								I will be using my home market of the Denver Metro Area for any statistics that are market specific. 
+								
+								</br></br>
+								<div id="section_title"><b>Developer Positions & Salaries</b></div> 
+								Available positions and salaries can be dependent on market. Average salary is slightly higher for mid-level iOS developers at $97,000 vs. $96,000 in my home market according to indeed.com. The salaries are still very close for Senior Developers in this area, but Android is higher ($104,000 vs. $103,000). Margins were similar in most other markets, too.
+
+								</br></br>
+								<div id="section_title"><b>Job Opportunity</b></div>
+								I found ample job opportunities for both Android and iOS developers in most markets I searched for during the Job Market assignment. Although the margins were small between the 2 platforms, I did find that most markets also favored iOS. Using the Denver Metro Area and the website dice.com, searching “mobile developer” returns over 500 results. 
+								
+								</br></br>
+								<div id="section_title"><b>Freelance ROI</b></div>
+								The amount of variables involved in freelance income is rather astounding so I will simplify things as much as I can. It is true that Android has a higher market share than iOS, however iOS users are more likely to pay for applications. Applications for iOS consistently make more money than Android because of this. According to Anusha Sethuraman of NewRelic.com, Apple users spent $10 billion dollars in 2013. The article didn’t state Androids sales, however it listed the split as 65% Apple, 35% Android. iOS apps also generate more income for their developers. The same article on NewRelic goes on to say the average income per app generated from the App Store is $500-1000 per month, but only $100-200 from the Play Store. Of course earning income as an independent or freelance developer is much more complicated as the factors are pretty much endless, but Apple seems to have a very big advantage here.
+								
+								</br></br>
+								<div id="section_title"><b>Trends and Growth Potential</b></div>
+								The mobile application market in general is very large and continues to grow rapidly. Application usage grew 76% for 2104, as reported by Sarah Perez of TechCrunch.com. “App usage” is defined by Flurry Analytics as a user opening an application and engaging with it. Simon Khalaf of Flurry lists Lifestyle and Shopping Applications as having the largest usage growth in 2014 at 174%. Utilities and Productivity apps are second with 121%. Both stores continue to grow year after year and that means the demand for mobile applications will also grow accordingly.
+								</br></br>
+								Thanks for reading and have a nice day,</br>
+								Eli
+								</br></br>
+								References:</br>
+								<a href="http://www.indeed.com/salary?q1=Android+Developer&l1=Denver,+CO&q2=iOS+Developer&l2=Denver,+CO&q3=Senior+Android+Developer&l3=Denver,+CO&q4=Senior+iOS+Developer&l4=Denver,+CO" target="_blank">
+									Developer Positions & Salaries - Indeed.com
+        						</a>
+								 
+								</br></br>
+								<a href="https://www.dice.com/jobs/q-Mobile+Developer-l-Denver,+CO-radius-20-jobs.html" target="_blank">
+									Job Opportunity Search - Dice.com
+        						</a> 
+
+								</br></br>
+								<a href="http://www.flurry.com/blog/flurry-insights/shopping-productivity-and-messaging-give-mobile-another-stunning-growth-year - .VMrz8MZJ2SU" target="_blank">
+									Khalaf, S. (2015). Shopping, Productivity and Messaging Give Mobile Another Stunning Growth Year - flurry.com
+        						</a> 
+								
+
+								</br></br>
+								<a href="http://techcrunch.com/2015/01/06/app-usage-grew-76-in-2014-with-shopping-apps-leading-the-way/" target="_blank">
+									Perez, S. (2015). App Usage Grew 76% In 2014, With Shopping Apps Leading The Way - TechCrunch.com
+        						</a> 
+
+								</br></br>
+								<a href="http://blog.newrelic.com/2014/02/18/app-economy-2014-wheres-money/" target="_blank">
+									Sethuraman, A. (2014). The App Economy in 2014: Where’s the Money? - blog.newrelic.com
+        						</a> 
+        						
+        						</br></br></br>
+        						
+        						<!-- reply 1 -->
+        						
+        						Replies: </br>
+        						<u>Response to Ken Wrencher, posted 2-1-15 at 8:05pm local</u></br></br>
+        						
+        						Hey Ken,</br>
+        						There is a lot of good data that came from your research. I did found some different results however. The first is average salary for iOS Developers. GlassDoor.com lists the national average as $86,241 for iOS and $87,742 for Android. On Indeed.com, the national average is listed as $101,000 and $100,000 for iOS and Android respectively. One thing that is lacking from both of these listing though is whether it is the Mean or Median average, so that could account for the differences. 
+        						
+        						</br></br>
+        						I found similar results for searches as you did. Almost all locations I search were fairly even between iOS and Android positions. If any of them leaned either way, it was to iOS and only slightly.
+
+        						</br></br>
+        						Thank you for sharing howmuchtomakeanapp.com and sfcd.com. They are both very good tools to get a very basic baseline for how much an application will cost. You are very right that no two apps will be the same though so the results from these sites should only be used as starting points.
+
+        						</br></br>
+        						I was quite surprised to learn that Europe has more developers than The States. China isn’t very surprising though considering the extreme population there. The problem was I was thinking USA had a higher population, but they actually have more than double us. I was even more surprised India wasn’t in the top three for most developers, as their population is pretty close to Chinas. It is some interesting stuff.
+        						
+        						</br></br>
+        						I agree with your stance over all. Both platforms are very close when everything is said and done and I would definitely consider a career in either, but I slightly prefer programming for iOS.
+        						
+        						</br></br>
+        						Thanks for reading and have a nice day,</br>
+        						Eli
+
+        						</br></br>
+        						References:</br>
+								<a href="http://www.glassdoor.com/Salaries/android-developer-salary-SRCH_KO0,17.htm" target="_blank">
+									Glassdoor.com Android
+        						</a>
+        						
+        						</br></br>
+								<a href="http://www.glassdoor.com/Salaries/ios-developer-salary-SRCH_KO0,13.htm" target="_blank">
+									Glassdoor.com iOS
+        						</a>   
+
+								</br></br>
+								<a href="http://www.indeed.com/salary?q1=Ios+Developer&l1=&q2=android+Developer&l2=" target="_blank">
+									Indeed.com iOS and Android
+        						</a>
+        						
+        						</br></br></br>
+        						
+        						<!-- reply 2 -->
+        						
+        						<u>Reply 2 to Mike Lewiston, posted 2-1-15 at 8:45pm local</u></br></br>
+
+        						Hey Mike,</br>
+        						I had a similar experience when I got my iPad from Full Sail. I also prefer Android for my personal device but am quite happy with iOS as well. I do prefer to program for iOS though, but the margin between the two platforms is pretty small.
+
+        						</br></br>
+        						I found similar results as you in that higher-level Android Developers earn more than their iOS counterpart, which I found interesting. I found mid-level was the pretty close too. According to indeed.com iOS was slightly hirer, but only by $1,000 per year. Glassdoor.com had them switched, with Android barely in the lead.
+
+        						</br></br>
+        						The data you found for Android and iOS growth is rather intriguing. I didn’t even know stackoverflow.com had a career section, but wasn’t surprised to learn Java (not Android) was significantly higher than pretty much everything else. Java has been going strong for a long time and its different versions are very popular for desktop and embedded programing. I had similar trouble when doing our job searches. Pretty much all of the locations I used had an even number of positions for either platform.
+
+        						</br></br>
+        						I also found that experience was by far the biggest factor for how much freelancers could charge. I didn’t see anything even close to $150,000 but I agree that a freelancer probably wouldn’t do a project that large. It definitely gets complicated when trying to analyze income for an independent application. There are just so many variables that come into play. One thing I did find interesting though is Android is by far the most popular in developing countries that don’t have money to spend on apps, bringing the overall average down. This was according to Brad Reed of BGR.com. I honestly don’t think it will be long before the two platforms are more even in that respect.
+
+        						</br></br>
+        						Both Android and iOS will always have their benefits, and there is plenty of room for both. Android has the lower end locked down and iOS stays a bit on the higher end. I am a big fan of wearables though, and right now I think Android is winning that war with Wear. Manufactures seem to agree too as it seems they are focusing on Android (even those that don’t use Wear) much more than Apple. I’m very excited to see were wearable technology heads in the future. 
+
+        						</br></br>
+        						At the end of the day you have very valid points and your research is nice and thorough. I do still prefer coding for iOS personally, but Android is great too. Both markets are very promising and I'd be happy to do either.
+
+        						</br></br>
+        						Thanks for reading and have a great day,</br>
+        						Eli
+
+        						</br></br>
+        						References:</br>
+								<a href="http://www.glassdoor.com/Salaries/android-developer-salary-SRCH_KO0,17.htm" target="_blank">
+									Glassdoor.com Android
+        						</a>    
+        						
+        						</br></br>
+								<a href="http://www.glassdoor.com/Salaries/ios-developer-salary-SRCH_KO0,13.htm" target="_blank">
+									Glassdoor.com iOS
+        						</a>   							 
+        						
+        						</br></br>
+								<a href="http://www.glassdoor.com/Salaries/ios-developer-salary-SRCH_KO0,13.htm" target="_blank">
+									Glassdoor.com iOS
+        						</a>   
+
+        						</br></br>
+								<a href="http://www.indeed.com/salary?q1=Ios+Developer&l1=&q2=android+Developer&l2=" target="_blank">
+									Indeed.com iOS and Android
+        						</a> 
+        						
+        						</br></br>
+								<a href="http://bgr.com/2014/06/26/ios-vs-android-developer-revenue/"_blank">
+									Reed, B. (2014). The one thing about iOS that Android might never be able to top - bgr.com
+        						</a> 
+        						
+
+								</div> <!-- about_text close -->
+								
+								<div class="about_links">
+									
+									<a target="_blank" href="/AndroidvsiOS.pdf" class="button">PDF Format</a>
+								</div>
+								
+							</div>
+						
+							<div class="clear"></div>
+						</div>
+						<div class="about_gap"></div>
+					</div>
+				</li>
+				<!-- Writing 2 Page End -->
+				
+				<!-- Writing 3 Page Start -->
+				<!--
+<li id="about" class="slide bg2">
+					<div class="main">
+						<div class="about_gap"></div>
+						<div class="about_content">
+						
+							<embed src="writing/MBLCreativeBrief.pdf" width="100%" height="100%" type='application/pdf'>
+							
+							<div class="clear"></div>
+						</div>
+						<div class="about_gap"></div>
+					</div>
+				</li>
+-->
+				<!-- Writing 3 Page End -->
+				
+								
+			</ul>
+		</section>
+		
+		<footer>
+			<div class="main">
+				Copyright 2015 - Elijah Freestone
+			</div>
+		</footer>
+	</body>
+</html>
