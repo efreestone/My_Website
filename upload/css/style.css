@@ -120,6 +120,7 @@ div .title{margin-top: auto; margin-bottom: auto; vertical-align: middle;}
 .about_text	{line-height: 22px}
 .about_links{display: block; margin-left: auto; margin-right: auto; margin-top: 15px; text-align: center;}
 .buttonGap{ margin-left: 15px; margin-right: 15px;}
+.appStoreButton{text-decoration:none}
 
 .team{float: left;margin-left: 20px;background: #fff;border-radius: 3px; margin-left: auto; margin-right: auto;}
 /* .team_box .team:first-child{margin-left: 0;} */
