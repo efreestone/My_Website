@@ -8,7 +8,7 @@ article,aside,audio,canvas,command,datalist,details,embed,figcaption,figure,foot
 /*********************************>> Global Properties <<*********************************/
 html {width:100%}
 
-body {font-family: "Helvetica", sans-serif; font-size:14px; line-height:19px; color:#424242; min-width:1030px; background:#D4DBD2;-webkit-text-size-adjust: none;}
+body {font-family: "Helvetica", "Helvetica Neue", "Calibri", sans-serif; font-size:14px; line-height:19px; color:#424242; min-width:1030px; background:#D4DBD2;-webkit-text-size-adjust: none;}
 
 .main{width: 940px; margin: 0 auto;}
 
@@ -38,7 +38,7 @@ body {font-family: "Helvetica", sans-serif; font-size:14px; line-height:19px; co
 .bg_none:after{display: none !important;}
 
 /*********************************>> Links <<*********************************/
-a {color:#424242;outline:none; text-decoration:none; cursor:pointer;}
+a {color:#4B7395;outline:none; text-decoration:none; cursor:pointer;}
 a:hover{ color:#b6c600; text-decoration:none;}
 
 /*********************************>> Displays <<*********************************/
