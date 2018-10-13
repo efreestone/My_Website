@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<meta name="robots" content="noarchive">
 		<meta name="description" content="Website for the Mobile Developer Elijah Freestone">
-		
+
 		<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
 		<script type="text/javascript" src="js/jquery.js"></script>
@@ -24,6 +24,7 @@
 		<!-- <script src="js/portfolio.js"></script> -->
 		<!-- <script src="js/overlay.js"></script> -->
 		<!-- <script src="js/jquery.tools.min.js"></script> -->
+
 		<script type="text/javascript">
 			$(document).ready(function() {
 				//ipad and iphone fix
@@ -32,35 +33,39 @@
         				$('ul.sf-menu').hideSuperfishUl();
     				});
 				}
-				
+
 				$('.flexslider').flexslider({
 					animation : "none"
 				});
 
 				/* $('.port_col a').touchTouch(); */
 				$('.port_col a').append('<em></em><span></span>');
-				
+
 				$('.fancybox').fancybox({
         			'autoSize': true
 				});
 			});
-			
-			$(function() {
-				$('.sf-menu').onePageNav({
-					begin : function() {
 
-					},
-					end : function() {
+			// $(function() {
+			// 	$('.sf-menu').onePageNav({
+			// 		begin : function() {
+            //
+			// 		},
+			// 		end : function() {
+            //
+			// 		},
+			// 		scrollOffset : 80
+			// 	});
+			// 	$('.main-menu').prepend('<div id="menu-icon"></div>');
+			// 	$("#menu-icon").on("click", function() {
+			// 		$(".sf-menu").slideToggle();
+			// 		$(this).toggleClass("active");
+			// 	});
+			// });
 
-					},
-					scrollOffset : 80
-				});
-				$('.main-menu').prepend('<div id="menu-icon"></div>');
-				$("#menu-icon").on("click", function() {
-					$(".sf-menu").slideToggle();
-					$(this).toggleClass("active");
-				});
-			});
+			// function goto($hashtag){
+     		// 	document.location = "index.html#" + $hashtag;
+			// }
 		</script>
 		<!-- Google Analytics -->
 		<script>
@@ -98,8 +103,9 @@
 							</li>
 							<li>
 								<a href="#about">About</a>
+								<!-- <a onclick="goto('about')">About</a> -->
 							</li>
-							
+
 							<li>
 								<a href="#portfolio">Portfolio</a>
 							</li>
@@ -138,9 +144,9 @@
 					</div>
 				</li>
 				<!-- home page end -->
-				
+
 				<!-- About Page Start -->
-				<li id="about" class="slide bg2">
+				<li name="about" id="about" class="slide bg2">
 					<div class="main">
 						<div class="about_gap"></div>
 						<div class="about_content">
@@ -150,16 +156,16 @@
 										<img src="images/aboutPhoto.jpg" alt="">
 									</figure>
 								</div>
-								<div class="about_text"> 
+								<div class="about_text">
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 									Born and raised in the Northern Front Range (Fort Collins) area of Colorado, Elijah currently resides in Loveland. He earned a Bachelors of Science Degree in Mobile Development from Full Sail University in May 2015. The degree program covered web and hybrid apps, iOS and Android development from start to finish. This also includes design, UX/UI and documentation for the applications. Elijah currently has two applications on the Apple App Store. The first titled <i>AstroBlast Invasion</i>. It’s a space shooter game built with Sprite Kit and Objective-C with Game Center integration. The second is a drawing application called <i>Quick Doodle</i> and was built with Swift and UIKit. Several other applications are in the works, most of which started life as projects at Full Sail. Elijah specializes in iOS development using Objective-C and Swift, however he is also knowledgeable and experienced in developing Android apps using Java and web-apps using HTML5, CSS3 and Javascript/JQuery/JQuery Mobile. Various Application Program Interfaces (APIs) and web services have also been utilized for different projects. These include APIs from Rotten Tomatoes, Weather Underground, Facebook and Twitter, among others. Database and web services include CouchDB, Cloudant and Parse (an MBaaS).
 								</br></br>
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 									When not developing mobile apps and games, Elijah has a fairly broad set of interests. He greatly enjoys and is very passionate about all things music; playing, listening to/watching, instruments (esp. guitar) and all the related gear. Other hobbies include cars, playing video games and watching various extreme sports such as snowboarding and freestyle BMX, and reading. Elijah is also very interested in electronics and has been building/repairing computers and various devices since childhood. Other interests include science and the outdoors.
 								</div>
-								
+
 								<div class="about_links">
-									<a href="https://github.com/efreestone" target="_blank"> 
+									<a href="https://github.com/efreestone" target="_blank">
 										<img src="images/GitHub_Logo.png" alt="View Elijah's GitHub">
 									</a>
 									<a class="buttonGap" href="#"></a>
@@ -167,7 +173,7 @@
       									<img src="images/linkedin_myprofile.png" alt="View Elijah's LinkedIn">
         							</a>
 								</div>
-								
+
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -175,7 +181,7 @@
 					</div>
 				</li>
 				<!-- About Page End -->
-				
+
 				<!-- Portfolio page start -->
 				<li id="portfolio" class="slide bg2">
 					<div class="main">
@@ -208,7 +214,7 @@
 									Swipe ToDo (coming soon)
 								</div>
 							</div>
-							<!-- 
+							<!--
 <div class="port_col">
 								<a href="CuBallDrop.html" class="fancybox fancybox.iframe" style="text-decoration:none"> <img src="images/portfolio3.png" alt=""> </a>
 								<div>
@@ -269,13 +275,13 @@
 								</div>
 								<div class="font2">
 									<noscript><span class="noscript_error">JavaScript is required for the contact form.</span></noscript>
-									
+
 									<p class="p2">
 										<strong>Contact Information</strong>
 									</p>
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 									Thank you for visiting! Elijah can be reached at <strong>Elijah(at)ElijahFreestone(dot)com</strong> or via the contact form on this site and he will get back to you as soon as possible. </br>
-									
+
 								</div>
 							</div>
 							<div class="col4">
@@ -289,18 +295,18 @@
 									<fieldset>
 										<label class="name">
 											<input type="text" value="Name">
-											<span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> 
+											<span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span>
 										</label>
 										<label class="email">
 											<input type="text" value="Email">
-											<span class="error">*This is not a valid email address.</span> <span class="empty">*This field is required.</span> 
+											<span class="error">*This is not a valid email address.</span> <span class="empty">*This field is required.</span>
 										</label>
-										
+
 										<label class="message">
 											<textarea cols="30" wrap="hard" style="width:95%;">Message content here</textarea>
 											<span class="error">*The message is too short.</span> <span class="empty">*This field is required.</span>
 										</label>
-										
+
 										<div class="buttons2">
 											<a href="#" data-type="submit" class="button">Send</a>
 										</div>
@@ -311,10 +317,10 @@
 					</div>
 				</li>
 				<!-- Contacts Page end -->
-				
+
 			</ul>
 		</section>
-		
+
 		<footer>
 			<div class="main">
 				Copyright 2016 - Elijah Freestone
