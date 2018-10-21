@@ -27,7 +27,7 @@ body {font-family: "Helvetica", "Helvetica Neue", "Calibri", sans-serif; font-si
 .m_left_zero{ margin-left:0 !important;}
 .p_bottom_zero{ padding-bottom:0 !important;}
 .p_left_zero{ padding-left:0 !important;}
-	
+
 .clear {clear:both;width:100%;line-height:0;font-size:0;}
 .wrapper {width:100%;overflow:hidden}
 .extra_wrapper{ overflow:hidden;}
@@ -93,7 +93,8 @@ div .title{margin-top: auto; margin-bottom: auto; vertical-align: middle;}
 #pages{position: relative;}
 #pages>li{width: 100%;}
 
-#home>.inner{padding-top: 90px;}
+#home{width: 80%}
+#home>.inner{padding-top: 90px; width: 80%; margin-left: auto; margin-right: auto;}
 
 .button{background: #3d3d3d;font-weight: bold;border-radius: 4px;font-size: 24px;line-height: 29px;text-transform: uppercase;color: #fff;display: inline-block;padding: 23px 30px 20px;}
 
@@ -138,10 +139,10 @@ div .title{margin-top: auto; margin-bottom: auto; vertical-align: middle;}
 #contact-form .success {width:246px;  padding:10px;}
 #contact-form textarea, #contact-form input {margin:0;font-size:19px; border:none; border-radius: 3px; color:#45493e; padding:20px 20px 18px;outline:none; position:relative; background:#eeeeee;font-family: 'Helvetica', sans-serif;}
 #contact-form input {width:462px;}
-#contact-form textarea {overflow:auto; width:462px; height:128px; resize:none; float:left; margin: 0 0 0 0;}	
-#contact-form label {display:block; min-height:82px; overflow:hidden;}	
+#contact-form textarea {overflow:auto; width:462px; height:128px; resize:none; float:left; margin: 0 0 0 0;}
+#contact-form label {display:block; min-height:82px; overflow:hidden;}
 #contact-form label.message { display:block; padding-bottom:0; }
-#contact-form .error, #contact-form .empty, #contact-form .success {display:none;}	
+#contact-form .error, #contact-form .empty, #contact-form .success {display:none;}
 #contact-form .error, #contact-form .empty {text-align:left; color:red; font-size:11px; clear:both;}
 #contact-form .buttons2 {overflow:hidden; position:relative; clear:both; margin-bottom: 20px;}
 #contact-form .buttons2 a{cursor:pointer; margin-right:4px; display: inline-block;text-align:center;font-size:24px;line-height:29px;color:#cacaca;background: #4e4e4e;border-radius: 3px;padding: 12px 30px 11px;}
